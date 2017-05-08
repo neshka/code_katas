@@ -26,6 +26,33 @@ function fold_to($distance)
 
 echo fold_to(384000000);
 
+//
+//$i = 0;
+//do {
+//    echo $i;
+//} while ($i > 0);
+//
+
+echo "<br>";
+
+function fold_toII($distance)
+{
+    $paper_thickness = 0.0001;
+    $fold_counter = 0;
+
+    do
+    {
+        $paper_thickness*=2;
+        $fold_counter++;
+    } while ($paper_thickness <= $distance);
+
+    return $fold_counter;
+}
+
+echo fold_toII(384000000);
+
+
+
 
 //test:
 //class FoldToTest extends TestCase {
