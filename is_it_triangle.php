@@ -1,5 +1,7 @@
 <?php
 
+//Write a code which help you to calculate if you can build a triangle from given sides
+
 function is_it_triangle($a, $b, $c){
     if ($a>($b+$c) || $b>($c+$a) || $c>($a+$b)){
         echo "This is a triangle";

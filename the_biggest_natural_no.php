@@ -1,5 +1,7 @@
 <?php
 
+//which number from given is the biggest
+
 function biggest_natural($a, $b, $c){
     if ($a>$b && $a>$c){
         return $a;

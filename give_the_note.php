@@ -1,5 +1,6 @@
 <?php
 
+//Write a program that evaluates the test (use if, else if and else).
 //0&ndash;39 p &ndash; F
 //40&ndash;54 p &ndash; E
 //55&ndash;69 p &ndash; D
