@@ -7,40 +7,29 @@
 //85&ndash;98 p &ndash; B
 //99&ndash;100 p &ndash; A
 
-//switch (true) {
-//
-//    case ($totaltime <= 1):
-//        echo "That was fast!";
-//        break;
-//
-//    case ($totaltime <= 5):
-//        echo "Not fast!";
-//        break;
-//
-//    case ($totaltime <= 10):
-//        echo "That's slooooow";
-//        break;
-//}
+function which_note($scoring){
+    if ($scoring >= 99){
+        echo "You've got A note";
+    }elseif ($scoring >= 98){
+        echo "You've hot B note";
+    }elseif ($scoring >= 84){
+        echo "You've got C note";
+    }elseif ($scoring >= 69){
+        echo "You've hot D note";
+    }elseif ($scoring >= 54){
+        echo "You've got E note";
+    }else{
+        echo "You've got F note";
+    }
+}
 
-//if ($i == 0) {
-//    echo "i equals 0";
-//} elseif ($i == 1) {
-//    echo "i equals 1";
-//} elseif ($i == 2) {
-//    echo "i equals 2";
-//}
-//
-//switch ($i) {
-//    case 0:
-//        echo "i equals 0";
-//        break;
-//    case 1:
-//        echo "i equals 1";
-//        break;
-//    case 2:
-//        echo "i equals 2";
-//        break;
-//}
+which_note(100);
+echo "<br>";
+which_note(31);
+echo "<br>";
+which_note(67);
+echo "<br>";
+which_note(88);
+echo "<br>";
 
-function which_note
 
