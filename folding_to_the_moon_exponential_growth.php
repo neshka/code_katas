@@ -7,14 +7,21 @@
 //Given distance in units of meters, calculate how many times you have to fold the paper to make the paper reach this distance.
 //Also, if somebody is giving you a non-positive distance, it's clearly bogus and you should yell at them by returning null/NULL.
 
-function fold_to($distance){
-    $paper_thickness = 0.0001;
-    $count_fold = 0;
-    while ($paper_thickness <= $distance){
+//while (condition is true) {
+//    code to be executed;
+//}
+
+function fold_to($distance)
+{
+    $paper_thickness = 0.0001;//paper thickness at the start
+    $fold_count = 0;//how many times do we have to fold, now we have '0'
+
+    while ($paper_thickness <= $distance)//while this condition is true do what below
+    {
         $paper_thickness*=2;
-        $count_fold++;
+        $fold_count++;
     }
-    return $count_fold;
+    return $fold_count;
 }
 
 echo fold_to(384000000);
