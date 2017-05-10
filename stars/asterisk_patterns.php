@@ -72,4 +72,20 @@ function makeSnow($n) {
 }
 
 makeSnow(8);
+echo "<br>";
+//triangle with numbers
 
+function trianglePlusNo($n){
+    for ($i=1;$i<=$n;$i++){
+        for ($j=1;$j<=$i;$j++){
+            if ($j<=$i){
+                echo "*";
+            }else{
+                echo "$j";
+            }
+        }
+        echo "<br>";
+    }
+}
+
+trianglePlusNo(10);
